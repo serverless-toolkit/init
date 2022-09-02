@@ -10,19 +10,23 @@
 npm run bootstrap
 ```
 
+**Sync files to AWS**
+
+```sh
+npm run sync
+```
+
+**Develop and preview**
+
+[https://${projectName}.${domainName}](https://${projectName}.${domainName})
+
 ### Development
 
-**Local development**
+**Local development with file sync and test execution**
 
 ```sh
 npm start
 npm run dev
-```
-
-**Sync to AWS**
-
-```sh
-npm run sync
 ```
 
 **Run tests locally**
