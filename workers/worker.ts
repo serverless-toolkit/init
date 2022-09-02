@@ -1,8 +1,7 @@
-import { Request, Response } from "@serverless-toolkit/cli";
+import { Request, Response } from '@serverless-toolkit/cli';
 
-async function worker1(request: Request): Promise<Response> {
-
-    return {
-        message: 'Hello World!'
-    };
+async function worker(request: Request): Promise<Response & { message: string }> {
+	return {
+		message: 'Hello World!'
+	};
 }
