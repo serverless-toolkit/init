@@ -10,4 +10,4 @@ title: Example Index Page
 
 - [Page](pages/page?message=Hello!)
 - [Worker](workers/worker)
-- [Saga](sagas/Saga)
+- [Saga](sagas/Saga?id=saga1&command=increment)
