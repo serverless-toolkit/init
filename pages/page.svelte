@@ -1,7 +1,7 @@
 <script context="module" lang="ts">
-    import { Request, Response } from "@serverless-toolkit/cli";
+    import { Request, Response } from '@serverless-toolkit/cli';
 
-    export const title = "Example Page";
+    export const title = 'Example Page';
     export let data = {};
 
     export async function get(
@@ -25,11 +25,14 @@
 
 <h1>{title}</h1>
 
-<pre>
-    <code>  
+<form method="post">
+    <input type="text" name="message" />
+    <input type="submit" value="send" />
+</form>
+
+<code>
     {JSON.stringify(data, null, 4)}
-    </code>
-</pre>
+</code>
 
 <style>
 </style>

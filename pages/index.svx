@@ -8,6 +8,6 @@ title: Example Index Page
 
 <h1>{title}</h1>
 
-- [Page](pages/page)
+- [Page](pages/page?message=Hello!)
 - [Worker](workers/worker)
 - [Saga](sagas/Saga)
