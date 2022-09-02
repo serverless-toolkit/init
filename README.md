@@ -1,4 +1,4 @@
-# Serverless-Toolkit CLI init template
+# ${projectName}
 
 ## Setup and Development
 
