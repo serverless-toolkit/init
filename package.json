@@ -1,20 +1,23 @@
 {
-  "name": "init",
-  "version": "1.0.0",
-  "description": "Serverless-Toolkit CLI init template",
-  "main": "index.js",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/serverless-toolkit/init.git"
+  "name": "${projectName}",
+  "version": "1.0.0",
+  "scripts": {
+    "sync": "stk sync",
+    "bootstrap": "stk bootstrap",
+    "destroy": "stk destroy",
+    "test": "stk test",
+    "dev": "stk dev",
+    "logs": "stk logs"
   },
-  "keywords": [
-    "serverless",
-    "serverless-toolkit"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/serverless-toolkit/init/issues"
+  "dependencies": { 
+    "aws-sdk": "latest"
   },
-  "homepage": "https://github.com/serverless-toolkit/init#readme"
+  "devDependencies": {
+    "@serverless-toolkit/cli": "latest",
+    "@playwright/test": "latest",
+    "odottaa": "latest",
+    "playwright": "latest",
+    "aws-cdk": "latest"
+  }
 }
