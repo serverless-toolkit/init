@@ -1,0 +1,42 @@
+name: STK-${projectName}-Deployment
+
+on:
+  push:
+    branches: [${gitBranchName}]
+		
+env:
+  AWS_REGION: "${awsRegion}"
+  AWS_ACCOUNT: "${awsAccount}"
+		
+permissions:
+  id-token: write
+  contents: read
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+		
+    steps:
+    - name: Git clone the repository
+      uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 18
+        cache: "npm"
+    - name: Install yarn dependencies
+      run: |
+        yarn install
+    - name: AWS configure credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        role-to-assume: arn:aws:iam::\${{ env.AWS_ACCOUNT }}:role/GitHubActionRole
+        role-session-name: stk-${projectName}-deployment
+        aws-region: \${{ env.AWS_REGION }}
+    - name: STK bootstrap      
+      run: |
+        yarn bootstrap
+    - name: STK deploy
+      run: |
+        yarn sync
+    - name: STK test
+      run: |
+        yarn test
