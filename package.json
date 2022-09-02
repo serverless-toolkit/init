@@ -1,0 +1,20 @@
+{
+  "name": "init",
+  "version": "1.0.0",
+  "description": "Serverless-Toolkit CLI init template",
+  "main": "index.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serverless-toolkit/init.git"
+  },
+  "keywords": [
+    "serverless",
+    "serverless-toolkit"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/serverless-toolkit/init/issues"
+  },
+  "homepage": "https://github.com/serverless-toolkit/init#readme"
+}
