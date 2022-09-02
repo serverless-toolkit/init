@@ -1,5 +1,5 @@
 class Example {
-    constructor(params) {
-        console.log({ params })
-    }
+  constructor(params) {
+    console.log({ params });
+  }
 }

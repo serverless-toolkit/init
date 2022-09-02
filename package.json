@@ -10,7 +10,7 @@
     "dev": "stk dev",
     "logs": "stk logs"
   },
-  "dependencies": { 
+  "dependencies": {
     "aws-sdk": "latest"
   },
   "devDependencies": {
