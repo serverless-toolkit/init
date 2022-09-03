@@ -18,6 +18,7 @@
     "@playwright/test": "latest",
     "odottaa": "latest",
     "playwright": "latest",
-    "aws-cdk": "latest"
+    "aws-cdk": "latest",
+    "aws-cdk-lib": "latest"
   }
 }
