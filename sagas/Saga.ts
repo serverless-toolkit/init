@@ -1,6 +1,6 @@
-import { Saga, Context, Request } from '@serverless-toolkit/cli';
+import { ISaga, Context, Request } from '@serverless-toolkit/cli';
 
-class Saga1 implements Saga {
+class Saga implements ISaga {
 	id: string = '';
 	value: number = 0;
 	context: Context;
