@@ -1,6 +1,7 @@
 import { Context, Saga, Request } from '@serverless-toolkit/cli';
 
 class Saga1 implements Saga {
+	id: string = '';
 	value: number = 0;
 	context: Context;
 	request: Request;
@@ -11,5 +12,8 @@ class Saga1 implements Saga {
 
 	decrement() {
 		this.value -= 1;
+	}
+
+	onAlarm() {
 	}
 }
