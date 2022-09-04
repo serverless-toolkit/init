@@ -28,7 +28,7 @@ jobs:
     - name: AWS configure credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        role-to-assume: arn:aws:iam::\${{ env.AWS_ACCOUNT }}:role/GitHubActionRole
+        role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT }}:role/GitHubActionRole
         role-session-name: stk-${projectName}-deployment
         aws-region: ${{ env.AWS_REGION }}
     - name: STK bootstrap      
