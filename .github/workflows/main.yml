@@ -30,7 +30,7 @@ jobs:
       with:
         role-to-assume: arn:aws:iam::\${{ env.AWS_ACCOUNT }}:role/GitHubActionRole
         role-session-name: stk-${projectName}-deployment
-        aws-region: \${{ env.AWS_REGION }}
+        aws-region: ${{ env.AWS_REGION }}
     - name: STK bootstrap      
       run: |
         npm run bootstrap
