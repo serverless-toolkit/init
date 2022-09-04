@@ -3,18 +3,18 @@ name: STK-${projectName}-Deployment
 on:
   push:
     branches: [${gitBranchName}]
-		
+
 env:
   AWS_REGION: "${awsRegion}"
   AWS_ACCOUNT: "${awsAccount}"
-		
+
 permissions:
   id-token: write
   contents: read
 jobs:
   deployment:
     runs-on: ubuntu-latest
-		
+
     steps:
     - name: Git clone the repository
       uses: actions/checkout@v3
