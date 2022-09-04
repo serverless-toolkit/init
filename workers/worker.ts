@@ -1,4 +1,4 @@
-import { Request, Response } from "@serverless-toolkit/cli";
+import { Request, Response } from "@serverless-toolkit/sdk";
 
 async function worker(
   request: Request
