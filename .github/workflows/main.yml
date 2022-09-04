@@ -22,9 +22,9 @@ jobs:
       with:
         node-version: 18
         cache: "npm"
-    - name: Install yarn dependencies
+    - name: Install NPM dependencies
       run: |
-        yarn install
+        npm install
     - name: AWS configure credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
@@ -33,10 +33,10 @@ jobs:
         aws-region: \${{ env.AWS_REGION }}
     - name: STK bootstrap      
       run: |
-        yarn bootstrap
+        npm run bootstrap
     - name: STK deploy
       run: |
-        yarn sync
+        npm run sync
     - name: STK test
       run: |
-        yarn test
+        npm run test
