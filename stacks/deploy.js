@@ -2,7 +2,7 @@ const { App } = require("aws-cdk-lib");
 const {
   ServerlessToolkitStack,
   env: environment,
-} = require("@serverless-toolkit/cli/stacks");
+} = require("@serverless-toolkit/stacks");
 
 const projectName = environment.PROJECTNAME;
 const domainName = environment.DOMAINNAME;
