@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@serverless-toolkit/cli": "latest",
+    "@serverless-toolkit/stacks": "latest",
     "@playwright/test": "latest",
     "odottaa": "latest",
     "playwright": "latest",
