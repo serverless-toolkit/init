@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-    import { Request, Response } from '@serverless-toolkit/cli';
+    import { Request, Response } from '@serverless-toolkit/sdk';
 
     export const title = 'Example Page';
     export let data = {};
