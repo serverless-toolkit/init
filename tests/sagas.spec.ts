@@ -7,8 +7,7 @@ test.describe("Sagas tests", () => {
     request,
   }) => {
     const response = await request.get(`/sagas/Saga?id=test1`);
-    console.log(response);
-
+    
     await expect(response).toHaveStatusCode(200);
     await expect(response).toMatchJSON({ id: "test1" });
   });
